@@ -1,10 +1,12 @@
 export const DATABASE = {
   MODELS: {
-    USER: "USER_MODEL",
+    NEWS_ARTICLE_MODEL: "NEWS_ARTICLE_MODEL",
+    SOURCE_MODEL: "SOURCE_MODEL",
   },
 
   COLLECTIONS: {
-    USER: "User",
+    NEWS_ARTICLE: "NewsArticle",
+    SOURCE: "Source",
   },
 
   PROVIDERS: {

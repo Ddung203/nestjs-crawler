@@ -6,13 +6,16 @@ import { ClsModule } from "nestjs-cls";
 import { AcceptLanguageResolver, HeaderResolver, I18nModule, QueryResolver } from "nestjs-i18n";
 import { join } from "path";
 
-import { AuthModule } from "./modules/auth/auth.module";
+import { CrawlerModule } from "./modules/crawler/crawler.module";
+import { CronjobModule } from "./modules/cronjob/cronjob.module";
 import { DatabaseModule } from "./modules/database/database.module";
-import { UsersModule } from "./modules/users/users.module";
+import { ExtractorModule } from "./modules/extractor/extractor.module";
+import { KafkaModule } from "./modules/kafka/kafka.module";
+import { NewsArticleModule } from "./modules/news_articles/news-article.module";
 import { ApiConfigService } from "./shared/services/api-config.service";
 import { SharedModule } from "./shared/shared.module";
 
-const modules = [DatabaseModule, UsersModule, AuthModule];
+const modules = [DatabaseModule, NewsArticleModule, KafkaModule, CrawlerModule, ExtractorModule, CronjobModule];
 
 @Module({
   imports: [

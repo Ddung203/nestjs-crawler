@@ -15,12 +15,12 @@ import * as morgan from "morgan";
 import { I18nService } from "nestjs-i18n";
 
 import { AppModule } from "./app.module";
+import { printBanner } from "./common/utils";
 import { GlobalExceptionFilter } from "./filters/global-exception.filter";
 import { TransformHttpCodeInterceptor } from "./interceptors/transform-response.interceptor";
 import { setupSwagger } from "./setup-swagger";
 import { ApiConfigService } from "./shared/services/api-config.service";
 import { SharedModule } from "./shared/shared.module";
-import { printBanner } from "./common/utils";
 
 export async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule, new ExpressAdapter(), {
