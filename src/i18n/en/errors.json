@@ -1,0 +1,41 @@
+{
+  "auth": {
+    "userNotFound": "User not found",
+    "invalidCredentials": "Invalid credentials",
+    "credentialAlreadyExists": "Email or phone number already exists",
+    "invalidToken": "Invalid or expired token",
+    "accountLocked": "Account has been locked",
+    "passwordMismatch": "Passwords do not match",
+    "weakPassword": "Password is too weak",
+    "sessionExpired": "Session has expired",
+    "unauthorized": "Unauthorized access",
+    "tooManyAttempts": "Too many login attempts"
+  },
+  "validation": {
+    "required": "{field} is required",
+    "invalid": "Invalid {field}",
+    "tooShort": "{field} is too short",
+    "tooLong": "{field} is too long",
+    "invalidFormat": "Invalid {field} format"
+  },
+  "data": {
+    "notFound": "{resource} not found",
+    "alreadyExists": "{resource} already exists",
+    "createFailed": "Failed to create {resource}",
+    "updateFailed": "Failed to update {resource}",
+    "deleteFailed": "Failed to delete {resource}"
+  },
+  "server": {
+    "internalError": "Internal server error",
+    "serviceUnavailable": "Service temporarily unavailable",
+    "databaseError": "Database error occurred",
+    "networkError": "Network connection error",
+    "timeoutError": "Request timeout"
+  },
+  "file": {
+    "uploadFailed": "File upload failed",
+    "invalidType": "Invalid file type",
+    "tooLarge": "File is too large",
+    "downloadFailed": "File download failed"
+  }
+}

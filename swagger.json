@@ -1,0 +1,167 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/v1/users": {
+      "get": {
+        "operationId": "UsersController_findAll_v1",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "users"
+        ]
+      }
+    },
+    "/v1/auth/signUp": {
+      "post": {
+        "operationId": "AuthController_signUp_v1",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUserDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "auth"
+        ]
+      }
+    },
+    "/v1/auth/signIn": {
+      "post": {
+        "operationId": "AuthController_signIn_v1",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SignInDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "auth"
+        ]
+      }
+    },
+    "/v1/auth/change-password": {
+      "patch": {
+        "operationId": "AuthController_changePassword_v1",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "auth"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "API",
+    "description": "### REST\n\nRoutes is following REST standard (Richardson level 3)\n\n<details><summary>Detailed specification</summary>\n<p>\n\n**List:**\n  - `GET /<resources>/`\n    - Get the list of **<resources>** as admin\n  - `GET /user/<user_id>/<resources>/`\n    - Get the list of **<resources>** for a given **<user_id>**\n    - Output a **403** if logged user is not **<user_id>**\n\n**Detail:**\n  - `GET /<resources>/<resource_id>`\n    - Get the detail for **<resources>** of id **<resource_id>**\n    - Output a **404** if not found\n  - `GET /user/<user_id>/<resources>/<resource_id>`\n    - Get the list of **<resources>** for a given **user_id**\n    - Output a **404** if not found\n    - Output a **403** if:\n      - Logged user is not **<user_id>**\n      - The **<user_id>** have no access to **<resource_id>**\n\n**Creation / Edition / Replacement / Suppression:**\n  - `<METHOD>` is:\n    - **POST** for creation\n    - **PATCH** for update (one or more fields)\n    - **PUT** for replacement (all fields, not used)\n    - **DELETE** for suppression (all fields, not used)\n  - `<METHOD> /<resources>/<resource_id>`\n    - Create **<resources>** with id **<resource_id>** as admin\n    - Output a **400** if **<resource_id>** conflicts with existing **<resources>**\n  - `<METHOD> /user/<user_id>/<resources>/<resource_id>`\n    - Create **<resources>** with id **<resource_id>** as a given **user_id**\n    - Output a **409** if **<resource_id>** conflicts with existing **<resources>**\n    - Output a **403** if:\n      - Logged user is not **<user_id>**\n      - The **<user_id>** have no access to **<resource_id>**\n</p>\n</details>",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "tags": [],
+  "servers": [],
+  "components": {
+    "securitySchemes": {
+      "bearer": {
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "type": "http"
+      }
+    },
+    "schemas": {
+      "CreateUserDto": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "fullName": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email",
+          "password",
+          "fullName",
+          "phoneNumber"
+        ]
+      },
+      "SignInDto": {
+        "type": "object",
+        "properties": {
+          "phoneNumber": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "phoneNumber",
+          "password"
+        ]
+      },
+      "ChangePasswordDto": {
+        "type": "object",
+        "properties": {
+          "phoneNumber": {
+            "type": "string"
+          },
+          "oldPassword": {
+            "type": "string"
+          },
+          "newPassword": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "phoneNumber",
+          "oldPassword",
+          "newPassword"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "common": {
+    "success": "Operation completed successfully",
+    "failed": "Operation failed",
+    "welcome": "Welcome to our application",
+    "goodbye": "Goodbye! Have a nice day",
+    "confirm": "Are you sure?",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "update": "Update",
+    "loading": "Loading...",
+    "processing": "Processing..."
+  },
+  "auth": {
+    "welcome": "Welcome back, {name}!",
+    "loginSuccess": "Login successful",
+    "logoutSuccess": "Logout successful",
+    "registerSuccess": "Registration successful",
+    "passwordChanged": "Password changed successfully",
+    "passwordResetSent": "Password reset instructions sent to your email",
+    "accountActivated": "Your account has been activated",
+    "verificationSent": "Verification email has been sent"
+  },
+  "notification": {
+    "newMessage": "You have a new message",
+    "newNotification": "You have a new notification",
+    "updateAvailable": "New update available",
+    "emailSent": "Email sent successfully",
+    "dataSaved": "Data saved successfully",
+    "profileUpdated": "Profile updated successfully"
+  },
+  "crud": {
+    "createSuccess": "{resource} created successfully",
+    "updateSuccess": "{resource} updated successfully",
+    "deleteSuccess": "{resource} deleted successfully",
+    "fetchSuccess": "{resource} fetched successfully",
+    "noData": "No {resource} found",
+    "loadMore": "Load more {resource}"
+  },
+  "validation": {
+    "success": "Validation successful",
+    "enterValue": "Please enter {field}",
+    "selectValue": "Please select {field}",
+    "minLength": "{field} must be at least {min} characters",
+    "maxLength": "{field} must not exceed {max} characters",
+    "emailFormat": "Please enter a valid email address",
+    "phoneFormat": "Please enter a valid phone number",
+    "passwordMatch": "Passwords must match"
+  }
+}

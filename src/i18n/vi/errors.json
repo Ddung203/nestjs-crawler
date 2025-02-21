@@ -1,0 +1,41 @@
+{
+  "auth": {
+    "userNotFound": "Không tìm thấy người dùng",
+    "invalidCredentials": "Thông tin đăng nhập không hợp lệ",
+    "credentialAlreadyExists": "Email hoặc số điện thoại đã tồn tại",
+    "invalidToken": "Token không hợp lệ hoặc đã hết hạn",
+    "accountLocked": "Tài khoản đã bị khóa",
+    "passwordMismatch": "Mật khẩu không khớp",
+    "weakPassword": "Mật khẩu quá yếu",
+    "sessionExpired": "Phiên đăng nhập đã hết hạn",
+    "unauthorized": "Không có quyền truy cập",
+    "tooManyAttempts": "Quá nhiều lần đăng nhập thất bại"
+  },
+  "validation": {
+    "required": "{field} là bắt buộc",
+    "invalid": "{field} không hợp lệ",
+    "tooShort": "{field} quá ngắn",
+    "tooLong": "{field} quá dài",
+    "invalidFormat": "Định dạng {field} không hợp lệ"
+  },
+  "data": {
+    "notFound": "Không tìm thấy {resource}",
+    "alreadyExists": "{resource} đã tồn tại",
+    "createFailed": "Tạo {resource} thất bại",
+    "updateFailed": "Cập nhật {resource} thất bại",
+    "deleteFailed": "Xóa {resource} thất bại"
+  },
+  "server": {
+    "internalError": "Lỗi máy chủ nội bộ",
+    "serviceUnavailable": "Dịch vụ tạm thời không khả dụng",
+    "databaseError": "Đã xảy ra lỗi cơ sở dữ liệu",
+    "networkError": "Lỗi kết nối mạng",
+    "timeoutError": "Yêu cầu hết thời gian"
+  },
+  "file": {
+    "uploadFailed": "Tải lên tệp thất bại",
+    "invalidType": "Loại tệp không hợp lệ",
+    "tooLarge": "Tệp quá lớn",
+    "downloadFailed": "Tải xuống tệp thất bại"
+  }
+}

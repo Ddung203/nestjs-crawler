@@ -1,0 +1,52 @@
+{
+  "common": {
+    "success": "Thao tác thành công",
+    "failed": "Thao tác thất bại",
+    "welcome": "Chào mừng đến với ứng dụng",
+    "goodbye": "Tạm biệt! Chúc một ngày tốt lành",
+    "confirm": "Bạn có chắc chắn không?",
+    "cancel": "Hủy bỏ",
+    "save": "Lưu",
+    "delete": "Xóa",
+    "edit": "Sửa",
+    "update": "Cập nhật",
+    "loading": "Đang tải...",
+    "processing": "Đang xử lý..."
+  },
+  "auth": {
+    "welcome": "Chào mừng trở lại, {name}!",
+    "loginSuccess": "Đăng nhập thành công",
+    "logoutSuccess": "Đăng xuất thành công",
+    "registerSuccess": "Đăng ký thành công",
+    "passwordChanged": "Đổi mật khẩu thành công",
+    "passwordResetSent": "Hướng dẫn đặt lại mật khẩu đã được gửi đến email của bạn",
+    "accountActivated": "Tài khoản của bạn đã được kích hoạt",
+    "verificationSent": "Email xác thực đã được gửi"
+  },
+  "notification": {
+    "newMessage": "Bạn có tin nhắn mới",
+    "newNotification": "Bạn có thông báo mới",
+    "updateAvailable": "Có bản cập nhật mới",
+    "emailSent": "Gửi email thành công",
+    "dataSaved": "Lưu dữ liệu thành công",
+    "profileUpdated": "Cập nhật hồ sơ thành công"
+  },
+  "crud": {
+    "createSuccess": "Tạo {resource} thành công",
+    "updateSuccess": "Cập nhật {resource} thành công",
+    "deleteSuccess": "Xóa {resource} thành công",
+    "fetchSuccess": "Lấy {resource} thành công",
+    "noData": "Không tìm thấy {resource}",
+    "loadMore": "Tải thêm {resource}"
+  },
+  "validation": {
+    "success": "Xác thực thành công",
+    "enterValue": "Vui lòng nhập {field}",
+    "selectValue": "Vui lòng chọn {field}",
+    "minLength": "{field} phải có ít nhất {min} ký tự",
+    "maxLength": "{field} không được vượt quá {max} ký tự",
+    "emailFormat": "Vui lòng nhập địa chỉ email hợp lệ",
+    "phoneFormat": "Vui lòng nhập số điện thoại hợp lệ",
+    "passwordMatch": "Mật khẩu không khớp"
+  }
+}
